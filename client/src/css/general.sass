@@ -1,0 +1,221 @@
+$break-sm: 600px
+$break-md: 900px
+$break-lg: 1200px
+
+$light-blue: #EBF4FF
+$dark-blue: #00AAE4
+$brown: #515252
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Source Sans Pro', sans-serif !important
+
+header
+  background-color: white
+  position: fixed
+  z-index: 999
+  top: 0
+
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 60px
+
+  @media (max-width: 900px)
+    height: 50px
+
+  img
+    height: 40px
+
+    @media (max-width: 900px)
+      height: 30px
+
+  .account-link
+    position: absolute
+    right: 0
+    padding-right: 1em
+
+.header-space
+  height: 60px !important
+
+  @media (max-width: 900px)
+    height: 50px !important
+
+.section
+  &.invert
+    background-color: $light-blue !important
+
+.MuiButton-root
+  background-color: $dark-blue !important
+  color: white !important
+
+.Mui-selected
+  background-color: $dark-blue !important
+  color: white !important
+
+.MuiSelect-select
+  background-color: white !important
+
+input
+  background-color: white !important
+  border-radius: 4px
+
+a
+  text-decoration: none !important
+  color: $dark-blue !important
+
+.bg-white
+  background-color: white !important
+
+.bg-blue
+  background-color: $light-blue !important
+
+.c-blue
+  color: $dark-blue !important
+
+.white
+  color: white !important
+
+.w-100
+  width: 100%
+
+.center-text
+  text-align: center
+
+.light
+  font-weight: 300
+
+.splash-screen
+  min-width: 100%
+  min-height: 100vh
+
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+
+  background-size: cover !important
+  background-color: black
+
+.card-item
+  padding: 2em
+  border-radius: 1em
+  background-color: $light-blue
+  color: $brown
+
+.transport
+  @extend .card-item
+  width: 100%
+  border: none !important
+
+  cursor: pointer !important
+
+  font-weight: bold
+  text-align: center
+
+  &.invert
+    color: white !important
+    background-color: $brown !important
+
+  .icon
+    display: block
+    width: 4em
+    margin: 0.5em auto
+
+  .cost
+    margin-bottom: 0.5em
+    font-size: 2em
+
+  .title
+    margin-bottom: 0.5em
+    font-size: 1.5em
+
+  .text-sm
+    font-size: 0.75em
+    font-weight: 300
+
+.event
+  @extend .card-item
+  font-weight: bold
+  text-align: center
+
+  &.invert
+    color: white !important
+    background-color: $brown !important
+
+  .icon
+    display: block
+    width: 3em
+    margin: 0.5em auto
+
+  .title
+    font-size: 1.5em
+
+    @media (max-width: 900px)
+      font-size: 1em
+
+  .text-sm
+    font-size: 0.75em
+    font-weight: 300
+
+.timeline
+  width: 100%
+
+  .time
+    .date
+      font-weight: bold
+    .time
+      font-weight: 300
+
+  .location
+    .city
+      font-weight: bold
+    .name
+      font-weight: 300
+
+  .travel-time
+    font-weight: 300
+
+  .travel-company
+    font-weight: bold
+
+.MuiTimelineItem-root:last-of-type
+  min-height: auto !important
+
+.MuiTimelineConnector-root
+  background-color: $dark-blue !important
+
+.MuiTimelineDot-root
+  background-color: $dark-blue !important
+
+.native-select
+  font-size: 1em !important
+  font-weight: bold !important
+
+.section-title
+  font-weight: bold
+  font-size: 2em
+
+  display: flex
+  align-items: center
+
+  @media (max-width: 900px)
+    font-size: 1.5em
+
+.trip-title
+  font-weight: 300
+  font-size: 5em
+
+  @media (max-width: 900px)
+    font-size: 2.5em
+
+.trip-info
+  color: $brown
+  font-weight: 300
+  font-size: 1.5em
+
+  @media (max-width: 900px)
+    font-size: 1em

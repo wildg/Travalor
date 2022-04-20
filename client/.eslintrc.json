@@ -1,0 +1,24 @@
+{
+    "extends": ["plugin:react/recommended", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+        "prettier/prettier": ["error", {
+            "semi": true,
+            "trailingComma": "all",
+            "singleQuote": true,
+            "printWidth": 70
+        }],
+        "react/react-in-jsx-scope": "off"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "es2021": true
+    }
+}

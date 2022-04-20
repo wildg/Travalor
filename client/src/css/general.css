@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 50px;
+  }
+}
+
+header img {
+  height: 40px;
+}
+
+@media (max-width: 900px) {
+  header img {
+    height: 30px;
+  }
+}
+
+header .account-link {
+  position: absolute;
+  right: 0;
+  padding-right: 1em;
+}
+
+.header-space {
+  height: 60px !important;
+}
+
+@media (max-width: 900px) {
+  .header-space {
+    height: 50px !important;
+  }
+}
+
+.section.invert {
+  background-color: #EBF4FF !important;
+}
+
+.MuiButton-root {
+  background-color: #00AAE4 !important;
+  color: white !important;
+}
+
+.Mui-selected {
+  background-color: #00AAE4 !important;
+  color: white !important;
+}
+
+.MuiSelect-select {
+  background-color: white !important;
+}
+
+input {
+  background-color: white !important;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #00AAE4 !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-blue {
+  background-color: #EBF4FF !important;
+}
+
+.c-blue {
+  color: #00AAE4 !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.splash-screen {
+  min-width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-size: cover !important;
+  background-color: black;
+}
+
+.card-item, .transport, .event {
+  padding: 2em;
+  border-radius: 1em;
+  background-color: #EBF4FF;
+  color: #515252;
+}
+
+.transport {
+  width: 100%;
+  border: none !important;
+  cursor: pointer !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+.transport.invert {
+  color: white !important;
+  background-color: #515252 !important;
+}
+
+.transport .icon {
+  display: block;
+  width: 4em;
+  margin: 0.5em auto;
+}
+
+.transport .cost {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.transport .title {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+.transport .text-sm {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.event {
+  font-weight: bold;
+  text-align: center;
+}
+
+.event.invert {
+  color: white !important;
+  background-color: #515252 !important;
+}
+
+.event .icon {
+  display: block;
+  width: 3em;
+  margin: 0.5em auto;
+}
+
+.event .title {
+  font-size: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .event .title {
+    font-size: 1em;
+  }
+}
+
+.event .text-sm {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+.timeline {
+  width: 100%;
+}
+
+.timeline .time .date {
+  font-weight: bold;
+}
+
+.timeline .time .time {
+  font-weight: 300;
+}
+
+.timeline .location .city {
+  font-weight: bold;
+}
+
+.timeline .location .name {
+  font-weight: 300;
+}
+
+.timeline .travel-time {
+  font-weight: 300;
+}
+
+.timeline .travel-company {
+  font-weight: bold;
+}
+
+.MuiTimelineItem-root:last-of-type {
+  min-height: auto !important;
+}
+
+.MuiTimelineConnector-root {
+  background-color: #00AAE4 !important;
+}
+
+.MuiTimelineDot-root {
+  background-color: #00AAE4 !important;
+}
+
+.native-select {
+  font-size: 1em !important;
+  font-weight: bold !important;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 1.5em;
+  }
+}
+
+.trip-title {
+  font-weight: 300;
+  font-size: 5em;
+}
+
+@media (max-width: 900px) {
+  .trip-title {
+    font-size: 2.5em;
+  }
+}
+
+.trip-info {
+  color: #515252;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+@media (max-width: 900px) {
+  .trip-info {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=general.css.map */

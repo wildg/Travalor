@@ -1,0 +1,18 @@
+
+--------- React Layer ---------------
+Client creates account:
+1. Input data into text fields (Browser)
+2. Browser does preliminary checks (Ex. Required fields are filled)
+3. React creates hook for sending new user data (Formats request -> Body)
+4. Sends POST data to our Express server
+
+------- Node JS Layer -------------
+5. Receive data
+6. Validate data
+7. Query our database (Postgres)
+8. Return query to Browser
+
+9. Sends JSON/Resp Code data to React
+
+-------- Back to React Layer ---------
+10. React will determine what the data means (500 - Cancel, 200 - Continue)
