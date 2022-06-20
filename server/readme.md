@@ -1,6 +1,6 @@
-# CPSC471 Project - Server Code
+# Travalor Server Code
 
-The server code for the CPSC471 project which defines the API for interacting with the database.
+The server code Travalor which defines the API for interacting with the database.
 
 ## Use
 
@@ -16,6 +16,13 @@ The endpoints for the server include:
 
 - `/admin`: _Get_ and _Update_ specific admin information.
 - `/banking`: _Get_, _Update_, _Create_, and _Delete_ banking information
+- `/booking`: _Get_, _Create_, and _Delete_ a booking
+- `/client`: _Get_, _Update_, _Create_, and _Delete_ client information
+- `/event`: _Get_, _Update_, _Create_, and _Delete_ event information
+- `/location`: _Get_, _Update_, _Create_, and _Delete_ location information
+- `/passenger`: _Get_ and _Update_ passenger information
+- `/search`: _Get_ search information
+- `/transport`: _Get_, _Update_, _Create_, and _Delete_ transportation information
 
 ## Stack
 
@@ -32,8 +39,3 @@ The endpoints for the server include:
 - **/middleware**: Functions that help validate API calls
 - **/rest**: Functions that run based on API calls
 - **/schema**: Contains schema for all of the API data available
-
-## Possible Datasets
-
-- https://www.kaggle.com/zernach/2018-airplane-flights
-- https://www.kaggle.com/nikhilmittal/flight-fare-prediction-mh
