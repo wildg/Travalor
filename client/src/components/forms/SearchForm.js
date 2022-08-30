@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { useNavigate, Navigate } from 'react-router-dom';
 
 import create from '../../js/create';
 import { ParseFormData } from '../../js/general';
 
+import { UserContext } from '../../contexts/UserContext';
 import ErrorNotification from '../notifications/ErrorNotification';
 import LocationSelect from './LocationSelect';
 import DateSelect from './DateSelect';
@@ -26,6 +27,9 @@ function SearchForm() {
   const [type, setType] = useState(travelTypes[0]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+
+  // Get the user
+  const { user } = useContext(UserContext);
 
   // Use navigation to submit search
   const navigate = useNavigate();
@@ -89,7 +93,7 @@ function SearchForm() {
 
     // Send a post request
     return create(
-      `/search/return/?client_id=32a64592-e286-41fa-b9b8-d5c80b5b0d77`,
+      `/search/return/?client_id=${user.CLIENT_ID}`,
       reqData,
     );
   };
@@ -105,10 +109,13 @@ function SearchForm() {
 
     // Send a post request
     return create(
-      `/search/one-way/?client_id=32a64592-e286-41fa-b9b8-d5c80b5b0d77`,
+      `/search/one-way/?client_id=${user.CLIENT_ID}`,
       reqData,
     );
   };
+
+  // If there is no user data, redirect to log in
+  if (user === null) return <Navigate to="/login" />;
 
   return (
     <Grid

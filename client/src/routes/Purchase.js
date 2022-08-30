@@ -185,8 +185,6 @@ function Purchase() {
 
     await create(`/banking?client_id=${user.CLIENT_ID}`, bankValid);
     await update(`/banking?client_id=${user.CLIENT_ID}`, bankValid);
-
-    console.log('DONE!');
     return navigate('/user');
   };
 

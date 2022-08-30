@@ -31,7 +31,6 @@ const createEvent = async (req, res) => {
 
   // Send the query to the database
   return await pool.query(q, createValueArr, (error, results) => {
-    console.log(q);
     // If there is an error, send it
     if (error) {
       return res.status(500).json(error.detail);
@@ -62,7 +61,6 @@ const updateEvent = async (req, res) => {
 
   // Send the query to the database
   return await pool.query(q, updateValueArr, (error, results) => {
-    console.log(q);
     // If there is an error, send it
     if (error) {
       return res.status(500).json(error.detail);

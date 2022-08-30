@@ -54,7 +54,7 @@ function Events({ locationID, from, to = null }) {
     };
 
     getEventData();
-  }, [locationID]);
+  }, [locationID, from, to]);
 
   // If there is some error, return the error
   if (error !== '') return <ErrorNotification text={error} />;

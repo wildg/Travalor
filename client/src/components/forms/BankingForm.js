@@ -24,7 +24,6 @@ function BankingForm({ values = null, expiration, setExpiration }) {
 
   // If values are not null, use them instead
   if (values !== null) {
-    console.log(values[0]);
     firstName = values[0].FIRST_NAME;
     midName = values[0].MID_NAME;
     lastName = values[0].LAST_NAME;
